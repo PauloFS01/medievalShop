@@ -1,19 +1,40 @@
-class homeView extends View{
+class HomeView extends View{
+  constructor(elemento) {
+    super(elemento);
+    console.log("testando construtor da homewiew");
+  }
 
-  template(model){
-    `
-      <table>
-        <tbody>
+  template(){
+    return`
+        <table class="striped">
+          <tbody>
           <tr>
-            <td>teste</td>
-            <td>teste</td>
-            <td>teste</td>
-            <td>teste</td>
+              <th>DATA</th>
+              <th>QUANTIDADE</th>
+              <th>VALOR</th>
+              <th>VOLUME</th>
           </tr>
-        </tbody>
-      </table>
-
-    `
+          <tr>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+         </tr>
+         <tr>
+             <td>teste</td>
+             <td>teste</td>
+             <td>teste</td>
+             <td>teste</td>
+        </tr>
+        <tr>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+       </tr>
+         </tbody>
+       </table>
+     `;
   }
 
 

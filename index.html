@@ -3,23 +3,29 @@
   <head>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/libs/materialize.min.css">
   </head>
   <body>
     <header>
       <div class="container">
-        <h1 class = "titulo">VIKINGS WEAPONS STORE</h1>
+        <h1 class = "tituloPrincipal">VIKINGS WEAPONS STORE</h1>
       </div>
     </header>
   <main>
     <section class="container">
-	<h2>Items list<h2>
+
+      <div id="itensView"></div>
 
     </section>
   </main>
 
+  <!--<script src="js/jquery.js"></script>-->
+  <script src="js/controler/StoreController.js"></script>
   <script src="js/views/View.js"></script>
-  <script src="js/views/homeView.js"></script>
+  <script src="js/views/HomeView.js"></script>
 
-  <!--instaciar o controller -->
+  <script>
+    var storeController = new StoreController();
+</script>
   </body>
 </html>
