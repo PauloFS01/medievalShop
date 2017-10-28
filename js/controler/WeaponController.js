@@ -1,14 +1,14 @@
-class StoreController {
+class WeaponController {
 
     constructor() {
 
         let $ = document.querySelector.bind(document);
-        this._homeView = new HomeView($('#itensView'));
+        this._weaponView = new WeaponView($('#weaponView'));
         this._init();
 
     }
 
     _init(){
-      this._homeView.update()
+      this._weaponView.update()
     }
 }

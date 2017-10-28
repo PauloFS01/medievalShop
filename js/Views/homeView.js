@@ -6,34 +6,19 @@ class HomeView extends View{
 
   template(){
     return`
-        <table class="striped">
-          <tbody>
-          <tr>
-              <th>DATA</th>
-              <th>QUANTIDADE</th>
-              <th>VALOR</th>
-              <th>VOLUME</th>
-          </tr>
-          <tr>
-              <td>teste</td>
-              <td>teste</td>
-              <td>teste</td>
-              <td>teste</td>
-         </tr>
-         <tr>
-             <td>teste</td>
-             <td>teste</td>
-             <td>teste</td>
-             <td>teste</td>
-        </tr>
-        <tr>
-            <td>teste</td>
-            <td>teste</td>
-            <td>teste</td>
-            <td>teste</td>
-       </tr>
-         </tbody>
-       </table>
+    <div class="row">
+
+      <div class="col s4">
+        <p class="produto">PRODUTO AQUI</p>
+      </div>
+      <div class="col s4">
+        <pclass="produto">PRODUTO AQUI</p>
+      </div>
+      <div class="col s4">
+        <pclass="produto">PRODUTO AQUI</p>
+      </div>
+
+    </div>
      `;
   }
 

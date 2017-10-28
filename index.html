@@ -1,31 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
-    <header>
-      <div class="container">
-        <h1 class = "tituloPrincipal">VIKINGS WEAPONS STORE</h1>
+      <div class="myHeader">
+        <h1 class = "container">MEDIEVAL WEAPONS STORE</h1>
       </div>
-    </header>
   <main>
-    <section class="container">
+
+
+    <div  class="container slider">
+      <ul class="slides">
+        <li>
+          <img width="650" src="images/sample-11.jpg" class="image-slide">
+          <div class="caption left-align">
+            <h3 class="light black-text text-black-3">This is our big Tagline!</h3>
+            <h5 class="light black-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img width="650" src="images/sample-12.jpg" class="image-slide">
+          <div class="caption left-align">
+            <h3 class="light black-text text-black-3">Left Aligned Caption</h3>
+            <h5 class="light black-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img width="650" src="images/sample-13.jpg" class="image-slide">
+          <div class="caption left-align">
+            <h3 class="light black-text text-black-3">Right Aligned Caption</h3>
+            <h5 class="light black-text text-black-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+      </ul>
 
       <div id="itensView"></div>
 
-    </section>
+    </div>
   </main>
 
-  <!--<script src="js/jquery.js"></script>-->
+  <script src="js/jquery.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/slider.js"></script>
   <script src="js/controler/StoreController.js"></script>
-  <script src="js/views/View.js"></script>
-  <script src="js/views/HomeView.js"></script>
+  <script src="js/Views/View.js"></script>
+  <script src="js/Views/HomeView.js"></script>
+
 
   <script>
     var storeController = new StoreController();
-</script>
+  </script>
   </body>
 </html>

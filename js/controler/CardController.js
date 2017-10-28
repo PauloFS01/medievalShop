@@ -1,14 +1,14 @@
-class StoreController {
+class CardController {
 
     constructor() {
 
         let $ = document.querySelector.bind(document);
-        this._homeView = new HomeView($('#itensView'));
+        this._cardView = new CardView($('#itensView'));
         this._init();
 
     }
 
     _init(){
-      this._homeView.update()
+      this._cardView.update()
     }
 }
