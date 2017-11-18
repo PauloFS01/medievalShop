@@ -6,8 +6,8 @@ class View {
     throw new Error('Esse método de ser sobreescrito!!')
   }
 
-  update(){
-    this._elemento.innerHTML = this.template();
+  update(model){
+    this._elemento.innerHTML = this.template(model);
     console.log("testando update da wiew");
   }
 

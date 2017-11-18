@@ -6,13 +6,32 @@
     <link rel="stylesheet" type="text/css" href="css/libs/materialize.min.css">
     <link rel="stylesheet" href="css/libs/google-fonts.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
     <header>
-      <div class="myHeader">
-        <h1 class = "container">MEDIEVAL WEAPONS STORE</h1>
-      </div>
-    </header>
+      <nav>
+           <div class="nav-wrapper  blue-grey darken-4">
+               <a href="#" class="brand-logo"> MEDIEVAL</a>
+               <a href="#" data-activates="menu-mobile" class="button-collapse">
+                   <i class="material-icons">menu</i>
+               </a>
+               <ul class="right hide-on-med-and-down">
+                   <li><a href="#">Carrinho</a></li>
+                   <li><a href="#">Login</a></li>
+                   <li><a href="#">Cadastre-se</a></li>
+                   <li><a href="#">Ofertas</a></li>
+                   <li><a href="#">Fale Conosco</a></li>
+               </ul>
+               <ul class="side-nav" id="menu-mobile">
+                 <li><a href="#">Carrinho</a></li>
+                 <li><a href="#">Login</a></li>
+                 <li><a href="#">Cadastre-se</a></li>
+                 <li><a href="#">Ofertas</a></li>
+                 <li><a href="#">Fale Conosco</a></li>
+               </ul>
+           </div>
+       </nav>
   <main>
     <section class="container">
 
@@ -23,6 +42,7 @@
 
   <script src="js/jquery.js"></script>
   <script src="js/materialize.min.js"></script>
+  <script src="js/Views/menuView.js"></script>
   <script src="js/controler/WeaponController.js"></script>
   <script src="js/Views/View.js"></script>
   <script src="js/Views/WeaponView.js"></script>
@@ -31,6 +51,6 @@
   <script>
   var weaponController = new WeaponController();
   </script>
-  
+
   </body>
 </html>

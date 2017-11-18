@@ -6,49 +6,83 @@
     <link rel="stylesheet" type="text/css" href="css/libs/materialize.min.css">
     <link rel="stylesheet" href="css/libs/google-fonts.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!--
+  Com a tag meta viewport, indicamos ao browser que essa página deve ser otimizada para visualização
+  em dispositivos móveis. Com ela, definimos que a largura da viewport deve ser igual à largura do device,
+  e que a página deve ser escalonada para ocupar toda a tela;
+-->
+
   </head>
   <body>
-      <div class="myHeader">
-        <h1 class = "container">MEDIEVAL WEAPONS STORE</h1>
-      </div>
+    <header>
+    <nav>
+         <div class="nav-wrapper   blue-grey darken-4">
+             <a href="#" class="brand-logo"> MEDIEVAL</a>
+             <a href="#" data-activates="menu-mobile" class="button-collapse">
+                 <i class="material-icons">menu</i>
+             </a>
+             <ul class="right hide-on-med-and-down">
+                 <li><a href="#">Carrinho</a></li>
+                 <li><a href="#">Login</a></li>
+                 <li><a href="#">Cadastre-se</a></li>
+                 <li><a href="#">Ofertas</a></li>
+                 <li><a href="#">Fale Conosco</a></li>
+             </ul>
+             <ul class="side-nav" id="menu-mobile">
+               <li><a href="#">Carrinho</a></li>
+               <li><a href="#">Login</a></li>
+               <li><a href="#">Cadastre-se</a></li>
+               <li><a href="#">Ofertas</a></li>
+               <li><a href="#">Fale Conosco</a></li>
+             </ul>
+         </div>
+     </nav>
+   </header>
   <main>
 
 
     <div  class="container slider">
       <ul class="slides">
         <li>
-          <img width="650" src="images/sample-11.jpg" class="image-slide">
+          <img width="650" src="images/imagemSlider/sample-11.jpg" >
           <div class="caption left-align">
             <h3 class="light black-text text-black-3">This is our big Tagline!</h3>
             <h5 class="light black-text text-lighten-3">Here's our small slogan.</h5>
           </div>
         </li>
         <li>
-          <img width="650" src="images/sample-12.jpg" class="image-slide">
+          <img width="650" src="images/imagemSlider/sample-12.jpg" >
           <div class="caption left-align">
             <h3 class="light black-text text-black-3">Left Aligned Caption</h3>
             <h5 class="light black-text text-lighten-3">Here's our small slogan.</h5>
           </div>
         </li>
         <li>
-          <img width="650" src="images/sample-13.jpg" class="image-slide">
+          <img width="650" src="images/imagemSlider/sample-13.jpg">
           <div class="caption left-align">
             <h3 class="light black-text text-black-3">Right Aligned Caption</h3>
             <h5 class="light black-text text-black-3">Here's our small slogan.</h5>
           </div>
         </li>
       </ul>
-
+    </div>
       <div id="itensView"></div>
 
-    </div>
+<!-- criar uma lista de produtos para popular a pagina, pode-se para isso criar um classe listaDeprodutos conforme
+a ListaNegociacoes usada no treinamento depois popular as viewas dinamicamente-->
+
   </main>
 
   <script src="js/jquery.js"></script>
   <script src="js/materialize.min.js"></script>
+  <script src="js/Views/menuView.js"></script>
   <script src="js/slider.js"></script>
-  <script src="js/controler/StoreController.js"></script>
   <script src="js/Views/View.js"></script>
+  <script src="js/controler/StoreController.js"></script>
+  <script src="js/infra/Weapon.js"></script>
+  <script src="js/infra/WeaponList.js"></script>
   <script src="js/Views/HomeView.js"></script>
 
 

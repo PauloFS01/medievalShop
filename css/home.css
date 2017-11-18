@@ -1,0 +1,28 @@
+@media (max-width: 600px) {
+  .weaponCard {
+  	vertical-align: middle;
+  	display: block;
+  	width: 100%;
+    height: 30%;
+
+  }
+  .img {
+    width: 30%;
+    float: left;
+    height: auto;
+  }
+  .weaponCard .img {
+    position: relative;
+    overflow: hidden;
+  }
+
+}
+
+.weaponCard {
+	vertical-align: middle;
+	display: block;
+
+	text-align: center;
+	width: 100%;
+	box-shadow: 5px 3px 2px rgba(0, 0, 0, 0.5);
+}
