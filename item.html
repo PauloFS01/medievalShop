@@ -10,9 +10,9 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="container">
            <div class="nav-wrapper  blue-grey darken-4">
-               <a href="#" class="brand-logo"> MEDIEVAL</a>
+               <a href="index.html" class="brand-logo"> MEDIEVAL</a>
                <a href="#" data-activates="menu-mobile" class="button-collapse">
                    <i class="material-icons">menu</i>
                </a>
@@ -32,18 +32,20 @@
                </ul>
            </div>
        </nav>
+    </header>
+
   <main>
-    <section class="container">
 
-      <div id="weaponView"></div>
+    <div id="weaponView"></div>
 
-    </section>
   </main>
 
   <script src="js/jquery.js"></script>
   <script src="js/materialize.min.js"></script>
   <script src="js/Views/menuView.js"></script>
   <script src="js/controler/WeaponController.js"></script>
+  <script src="js/infra/Weapon.js"></script>
+  <script src="js/infra/WeaponList.js"></script>
   <script src="js/Views/View.js"></script>
   <script src="js/Views/WeaponView.js"></script>
 

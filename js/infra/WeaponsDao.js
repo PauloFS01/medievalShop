@@ -1,4 +1,4 @@
-class FactoryWeapons{
+class WeaponsDao{
   constructor{
 
   }

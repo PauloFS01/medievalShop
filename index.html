@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
 <!--
   Com a tag meta viewport, indicamos ao browser que essa página deve ser otimizada para visualização
   em dispositivos móveis. Com ela, definimos que a largura da viewport deve ser igual à largura do device,
@@ -17,8 +18,8 @@
   </head>
   <body>
     <header>
-    <nav>
-         <div class="nav-wrapper   blue-grey darken-4">
+    <nav class=" blue-grey darken-4">
+         <div class="nav-wrapper container">
              <a href="#" class="brand-logo"> MEDIEVAL</a>
              <a href="#" data-activates="menu-mobile" class="button-collapse">
                  <i class="material-icons">menu</i>
@@ -44,34 +45,36 @@
 
 
     <div  class="container slider">
-      <ul class="slides">
+      <ul class="slides container">
         <li>
-          <img width="650" src="images/imagemSlider/sample-11.jpg" >
+          <img src="images/imagemSlider/sample-11.jpg" class="container">
           <div class="caption left-align">
             <h3 class="light black-text text-black-3">This is our big Tagline!</h3>
             <h5 class="light black-text text-lighten-3">Here's our small slogan.</h5>
           </div>
         </li>
         <li>
-          <img width="650" src="images/imagemSlider/sample-12.jpg" >
+          <img src="images/imagemSlider/sample-12.jpg"  class="container">
           <div class="caption left-align">
             <h3 class="light black-text text-black-3">Left Aligned Caption</h3>
             <h5 class="light black-text text-lighten-3">Here's our small slogan.</h5>
           </div>
         </li>
         <li>
-          <img width="650" src="images/imagemSlider/sample-13.jpg">
+          <img src="images/imagemSlider/sample-13.jpg" class="container">
           <div class="caption left-align">
             <h3 class="light black-text text-black-3">Right Aligned Caption</h3>
             <h5 class="light black-text text-black-3">Here's our small slogan.</h5>
           </div>
         </li>
       </ul>
+
     </div>
-      <div id="itensView"></div>
+    <div id="itensView"></div>
 
 <!-- criar uma lista de produtos para popular a pagina, pode-se para isso criar um classe listaDeprodutos conforme
 a ListaNegociacoes usada no treinamento depois popular as viewas dinamicamente-->
+
 
   </main>
 
@@ -89,5 +92,7 @@ a ListaNegociacoes usada no treinamento depois popular as viewas dinamicamente--
   <script>
     var storeController = new StoreController();
   </script>
+
+
   </body>
 </html>

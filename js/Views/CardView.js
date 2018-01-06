@@ -1,20 +1,22 @@
 class CardView extends View{
   constructor(elemento) {
     super(elemento);
-    console.log("testando construtor da CardView");
   }
 
-  template(){
+
+  template(model){
     return`
 
+    ${model.weapons.map(n=>`
        <div class="divider"></div>
           <div class="section">
-            <h5>IMAGE 1</h5>
+            <img src="${n.enderreco}" class ='card-image'>
             <p>Dados</p>
-            <p>Descrição
+            <p>${n.descricao}
             <a class="btn-floating btn-large waves-effect waves-light red "><i class="material-icons">delete</i></a>
             </p>
           </div>
+      `).join('')}
           <div class="divider"></div>
           <div class="section">
             <h5>IMAGE 2</h5>

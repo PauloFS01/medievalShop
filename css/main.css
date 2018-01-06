@@ -6,4 +6,8 @@
 
 header {
 	font-family: Bellefair-Regular;
+	background-color: #263238;
+}
+html {
+	background-color: #cfd8dc;
 }
